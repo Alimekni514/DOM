@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: flex-start;
+    height:100vh;
+}
+.users li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ececec;
+}
+.listapp div button span {
+    font-weight: bold;
+}

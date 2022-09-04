@@ -1,0 +1,51 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM&Event</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="listapp">
+      <h2>List App</h2>
+      <div>
+        <input type="text" onkeydown="handleChange(event)" oninput="f1()" />
+        <button onclick="handleAjout(this)">
+          ajouter <span></span> a la liste
+        </button>
+      </div>
+      <ul class="persons"></ul>
+    </div>
+
+    <!-- interface Corona -->
+    <div class="interface-corona">
+      <p>
+        ################################################################################################################################################
+      </p>
+      <form action="" onsubmit="AjoutPersonne(event)">
+        <input type="text" />
+        <button>Ajouter</button>
+      </form>
+      Enregistrées
+      <ul class="enregistrees"></ul>
+      Vaccinées
+      <ul class="vaccinees"></ul>
+    </div>
+    <p>
+      ################################################################################################################################################
+    </p>
+    <!-- interface Admin -->
+    <div class="interfaceAdmin">
+      <form action="" onsubmit="AjoutPost(event)">
+        <input type="file" id="file" multiple="multiple" />
+        <input type="text" name="" id="user" />
+        <button id="post">Poster</button>
+        <ul class="etudiants"></ul>
+      </form>
+      <ul class="users"></ul>
+    </div>
+    <div class="images"></div>
+  </body>
+  <script src="main.js"></script>
+</html>
